@@ -1,0 +1,87 @@
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    @apply font-rubik;
+}
+
+.btn-chain {
+    color: #FFFFFF;
+    border: 1px solid #E6E8EC;
+    height: 36px;
+    display: flex;
+    padding: 0 6px;
+    font-size: 14px;
+    background: white;
+    align-items: center;
+    font-family: DM Sans;
+    font-weight: bold;
+    line-height: 18;
+    margin-left: 20px;
+    border-radius: 30px;
+}
+
+.btn-chain span {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    justify-content: center;
+    color: #4F5566;
+    font-weight: 600;
+}
+
+.btn-chain svg {
+    height: 20 !important;
+}
+
+input.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,
+        box-shadow .15s ease-in-out;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
